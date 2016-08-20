@@ -72,6 +72,7 @@ int main()
 		//freopen("out.txt", "w", stdout);
 	#endif
 	fastio;
+	cout<<"Hello World";
 
 }
 
