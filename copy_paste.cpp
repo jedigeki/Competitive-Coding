@@ -31,7 +31,7 @@ using 					namespace std;
 
 template <typename T> T max(T &a, T &b) {return (!(a < b) ? a : b);}
 template <typename T> T min(T &a, T &b) {return (a < b ? a : b);}
-template <typename T> T mod(T a, T b) {return (a < b` ? a : a % b);}
+template <typename T> T mod(T a, T b) {return (a < b ? a : a % b);}
 LL mulmod(LL a,LL b, LL m){LL q=(LL)(((long double)a*(long double)b)/(long double)m);LL r=a*b-q*m;if(r>m)r%=m;if(r<0)r+=m;return r;}
 template <typename T>T expo(T e, T n){T x=1,p=e;while(n){if(n&1)x=x*p;p=p*p;n>>=1;}return x;}
 template <typename T>T power(T e, T n, T m){T x=1,p=e;while(n){if(n&1)x=mod(x*p, m);p=mod(p*p, m);n>>=1;}return x;}
@@ -53,13 +53,23 @@ void pre()
 
 int main()
 {
-  	#ifndef ONLINE_JUDGE
+  	// #ifndef ONLINE_JUDGE
 		freopen("inp.txt", "r", stdin);
-		//freopen("out.txt", "w", stdout);
-	#endif
-	fastio;
-	cout<<"Hello World";
+		// freopen("out.txt", "w", stdout);
+	// #endif
+	// fastio;
 
+	// int t=580;
+	float mean=0;
+	int i,t=0;
+	for(i = 0;i<580;++i);
+	{
+		cin>>t;
+		mean += t;
+	}
+	cout<<endl;
+	cout<<mean;
+	return 0;
 }
 
 
